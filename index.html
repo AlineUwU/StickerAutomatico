@@ -226,6 +226,14 @@
     </div>
 
     <script src="script.js" defer></script>
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/StickerAutomatico/service-worker.js')
+                .then(reg => console.log('✅ Service Worker registrado:', reg.scope))
+                .catch(err => console.error('❌ Error registrando el Service Worker:', err));
+        }); 
+    }
     </script>
 </body>
 </html>
