@@ -1,12 +1,12 @@
 const CACHE_NAME = 'stickers-cache-v1';
 const FILES_TO_CACHE = [
-  'StickerAutomatico/',
-  'StickerAutomatico/index.html',
-  'StickerAutomatico/styles.css',
-  'StickerAutomatico/main.js',
-  'StickerAutomatico/manifest.json',
-  'StickerAutomatico/icon-192.png',
-  'StickerAutomatico/icon-512.png'
+  './',
+  './index.html',
+  './styles.css',
+  './main.js',
+  './manifest.json',
+  './icon-192.png',
+  './icon-512.png'
 ];
 
 self.addEventListener('install', e => {
