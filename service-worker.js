@@ -25,6 +25,12 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
   e.respondWith(
-    caches.match(e.request).then(resp => resp || fetch(e.request))
+    caches.match(e.request).then(resp => {
+      return resp || fetch(e.request).catch(() => {
+        if (e.request.mode === 'navigate') {
+          return caches.match('/StickerAutomatico/index.html');
+        }
+      });
+    })
   );
 });
