@@ -1,7 +1,7 @@
 {
   "name": "Generador de Stickers",
   "short_name": "Stickers",
-  "start_url": "/StickerAutomatico/",
+  "start_url": "/StickerAutomatico/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#5D5CDE",
